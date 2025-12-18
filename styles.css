@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.default {
+  width: calc(100% - 40px);
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+p {
+  line-height: 25px;
+}
+
+header {
+  width: 100%;
+
+  .logo {
+    height: 1rem;
+
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+  }
+  .banner-bg {
+    background-image: url("img/capa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: white;
+
+    height: 35rem;
+
+    .banner {
+      background-color: rgba(0, 0, 0, 0.596);
+
+      color: white;
+      text-shadow: 0 0 1px;
+
+      .banner-info {
+        height: 10rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+      }
+    }
+  }
+}
+main {
+  width: 100%;
+
+  .sobre-nos {
+    margin-bottom: 2rem;
+
+    .galeria-sobre-nos {
+      text-align: center;
+      flex: 1 1 auto;
+
+      margin: 20px 0;
+    }
+
+    .before p {
+      line-height: 33px;
+    }
+    .before p::before {
+      content: "";
+      border: 1px solid black;
+      margin: 0 10px;
+    }
+  }
+  .targaVermelha {
+    background-color: rgb(243, 44, 44);
+    height: 10rem;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 2rem;
+
+    .targaVemelhaEscura {
+      background-color: rgba(31, 0, 0, 0.521);
+      max-height: 5rem;
+      width: 100%;
+
+      color: white;
+      font-size: 33px;
+      text-shadow: 0 0 1px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .analise-cadastro {
+    .cadastro-top {
+      margin: 20px 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      fieldset {
+        padding: 20px;
+      }
+      button {
+        color: white;
+        font-weight: 600;
+
+        padding: 10px;
+        background-color: red;
+        border: none;
+        border-radius: 8px;
+      }
+    }
+  }
+}
